@@ -1,0 +1,13 @@
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.Form1.resources
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.Properties.Resources.resources
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\pract2_2\pract2_2\bin\Debug\pract2_2.exe.config
+C:\Users\Acer\source\repos\pract2_2\pract2_2\bin\Debug\pract2_2.exe
+C:\Users\Acer\source\repos\pract2_2\pract2_2\bin\Debug\pract2_2.pdb
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.exe
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.pdb
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.Form2.resources
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.Form3.resources
+C:\Users\Acer\source\repos\pract2_2\pract2_2\obj\Debug\pract2_2.Form4.resources
