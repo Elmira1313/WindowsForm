@@ -1,0 +1,10 @@
+C:\Users\Acer\source\repos\pract5_2\pract5_2\bin\Debug\pract5_2.exe.config
+C:\Users\Acer\source\repos\pract5_2\pract5_2\bin\Debug\pract5_2.exe
+C:\Users\Acer\source\repos\pract5_2\pract5_2\bin\Debug\pract5_2.pdb
+C:\Users\Acer\source\repos\pract5_2\pract5_2\obj\Debug\pract5_2.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\pract5_2\pract5_2\obj\Debug\pract5_2.Form1.resources
+C:\Users\Acer\source\repos\pract5_2\pract5_2\obj\Debug\pract5_2.Properties.Resources.resources
+C:\Users\Acer\source\repos\pract5_2\pract5_2\obj\Debug\pract5_2.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\pract5_2\pract5_2\obj\Debug\pract5_2.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\pract5_2\pract5_2\obj\Debug\pract5_2.exe
+C:\Users\Acer\source\repos\pract5_2\pract5_2\obj\Debug\pract5_2.pdb
