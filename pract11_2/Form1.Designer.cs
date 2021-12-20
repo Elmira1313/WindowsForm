@@ -58,6 +58,24 @@ namespace pract11_2
             this.label13 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.x1 = new System.Windows.Forms.TextBox();
+            this.x2 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.button15 = new System.Windows.Forms.Button();
+            this.otvet3 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +86,7 @@ namespace pract11_2
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1038, 74);
+            this.panel1.Size = new System.Drawing.Size(1420, 74);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -217,7 +235,7 @@ namespace pract11_2
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(22, 536);
+            this.label8.Location = new System.Drawing.Point(22, 628);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(284, 35);
             this.label8.TabIndex = 13;
@@ -228,7 +246,7 @@ namespace pract11_2
             this.otvet1.AutoSize = true;
             this.otvet1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.otvet1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.otvet1.Location = new System.Drawing.Point(312, 536);
+            this.otvet1.Location = new System.Drawing.Point(312, 628);
             this.otvet1.Name = "otvet1";
             this.otvet1.Size = new System.Drawing.Size(25, 35);
             this.otvet1.TabIndex = 14;
@@ -239,7 +257,7 @@ namespace pract11_2
             this.otvet2.AutoSize = true;
             this.otvet2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.otvet2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.otvet2.Location = new System.Drawing.Point(825, 536);
+            this.otvet2.Location = new System.Drawing.Point(825, 628);
             this.otvet2.Name = "otvet2";
             this.otvet2.Size = new System.Drawing.Size(25, 35);
             this.otvet2.TabIndex = 25;
@@ -250,7 +268,7 @@ namespace pract11_2
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(535, 536);
+            this.label10.Location = new System.Drawing.Point(535, 628);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(284, 35);
             this.label10.TabIndex = 24;
@@ -375,12 +393,227 @@ namespace pract11_2
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Location = new System.Drawing.Point(535, 520);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 35);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "x =";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label14.Location = new System.Drawing.Point(22, 520);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 35);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "x =";
+            // 
+            // x1
+            // 
+            this.x1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.x1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.x1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.x1.Location = new System.Drawing.Point(77, 517);
+            this.x1.Name = "x1";
+            this.x1.Size = new System.Drawing.Size(100, 43);
+            this.x1.TabIndex = 30;
+            // 
+            // x2
+            // 
+            this.x2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.x2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.x2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.x2.Location = new System.Drawing.Point(590, 517);
+            this.x2.Name = "x2";
+            this.x2.Size = new System.Drawing.Size(100, 43);
+            this.x2.TabIndex = 31;
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button7.Location = new System.Drawing.Point(205, 521);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(181, 37);
+            this.button7.TabIndex = 32;
+            this.button7.Text = "Умножить на х";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.Location = new System.Drawing.Point(721, 523);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(181, 37);
+            this.button8.TabIndex = 33;
+            this.button8.Text = "Умножить на х";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button9.Location = new System.Drawing.Point(28, 577);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(84, 37);
+            this.button9.TabIndex = 34;
+            this.button9.Text = "++";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button10.Location = new System.Drawing.Point(137, 577);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(84, 37);
+            this.button10.TabIndex = 35;
+            this.button10.Text = "--";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button11.Location = new System.Drawing.Point(650, 577);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(84, 37);
+            this.button11.TabIndex = 37;
+            this.button11.Text = "--";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button12.Location = new System.Drawing.Point(541, 577);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(84, 37);
+            this.button12.TabIndex = 36;
+            this.button12.Text = "++";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button13.Location = new System.Drawing.Point(318, 577);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(132, 37);
+            this.button13.TabIndex = 38;
+            this.button13.Text = "true/false";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button14.Location = new System.Drawing.Point(831, 577);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(132, 37);
+            this.button14.TabIndex = 39;
+            this.button14.Text = "true/false";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.richTextBox3.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.richTextBox3.Location = new System.Drawing.Point(1085, 179);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.Size = new System.Drawing.Size(263, 249);
+            this.richTextBox3.TabIndex = 40;
+            this.richTextBox3.Text = "";
+            // 
+            // button15
+            // 
+            this.button15.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button15.Location = new System.Drawing.Point(1054, 118);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(326, 38);
+            this.button15.TabIndex = 42;
+            this.button15.Text = "Перемножить Объект 1 и Объект 2";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // otvet3
+            // 
+            this.otvet3.AutoSize = true;
+            this.otvet3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.otvet3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.otvet3.Location = new System.Drawing.Point(1338, 461);
+            this.otvet3.Name = "otvet3";
+            this.otvet3.Size = new System.Drawing.Size(25, 35);
+            this.otvet3.TabIndex = 44;
+            this.otvet3.Text = "?";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.Location = new System.Drawing.Point(1048, 461);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(284, 35);
+            this.label17.TabIndex = 43;
+            this.label17.Text = "Количество элементов =";
+            // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button16.Location = new System.Drawing.Point(1054, 523);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(148, 91);
+            this.button16.TabIndex = 45;
+            this.button16.Text = "Преобразовать в ступенчатый массив";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button17.Location = new System.Drawing.Point(1232, 523);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(148, 91);
+            this.button17.TabIndex = 46;
+            this.button17.Text = "Преобразовать обратно в класс\r\n";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.ClientSize = new System.Drawing.Size(1038, 587);
+            this.ClientSize = new System.Drawing.Size(1420, 692);
+            this.Controls.Add(this.button17);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.otvet3);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.richTextBox3);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.x2);
+            this.Controls.Add(this.x1);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.otvet2);
@@ -450,6 +683,24 @@ namespace pract11_2
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox x1;
+        private System.Windows.Forms.TextBox x2;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Label otvet3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
     }
 }
 

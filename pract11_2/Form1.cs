@@ -15,6 +15,7 @@ namespace pract11_2
         public Form1()
         {
             InitializeComponent();
+            button17.Enabled = false;
         }
 
         MyArray a, b;
@@ -131,6 +132,211 @@ namespace pract11_2
                 MessageBox.Show("Что-то не так");
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox1.Text += "\nУмножение на число\n";
+                double x;
+                if (Double.TryParse(x1.Text, out x))
+                {
+                    a = a * x;
+                    a.Vivod(richTextBox1);
+                }
+                else
+                {
+                    MessageBox.Show("Проверьте введенные данные");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox2.Text += "\nУмножение на число\n";
+                double x;
+                if (Double.TryParse(x2.Text, out x))
+                {
+                    b = b * x;
+                    b.Vivod(richTextBox2);
+                }
+                else
+                {
+                    MessageBox.Show("Проверьте введенные данные");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox1.Text += "\n++\n";
+                double x;
+                a = a++;
+                a.Vivod(richTextBox1);
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox1.Text += "\n--\n";
+                double x;
+                a = a--;
+                a.Vivod(richTextBox1);
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (a)
+                {
+                    MessageBox.Show("Элементы строк возрают");
+                }
+                else
+                {
+                    MessageBox.Show("Элементы строк не возрают");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox2.Text += "\n++\n";
+                double x;
+                b = b++;
+                b.Vivod(richTextBox2);
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox2.Text += "\n--\n";
+                double x;
+                b = b--;
+                b.Vivod(richTextBox2);
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (b)
+                {
+                    MessageBox.Show("Элементы строк возрают");
+                }
+                else
+                {
+                    MessageBox.Show("Элементы строк не возрают");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        MyArray s;
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox3.Text = "";
+                otvet3.Text = "?";
+
+                s = a * b;
+                if (s != null)
+                {
+                    s.Vivod(richTextBox3);
+                    otvet3.Text = $"{s.Line}";
+                }
+                else
+                {
+                    richTextBox3.Text = "Матрицы нельзя перемножить";
+                }                
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+        double[][] r;
+        private void button16_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox3.Text = "Преобразование в массив\n\n";
+
+                r = (double[][])s;
+                for (int i = 0; i < r.Length; ++i, richTextBox3.Text += "\n")
+                    for (int j = 0; j < r[i].Length; ++j)
+                        richTextBox3.Text += $"{Math.Round(r[i][j], 1),5}";
+                button17.Enabled = true;
+                button16.Enabled = true;
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox3.Text = "Преобразование в класс\n\n";
+                MyArray bufa = (MyArray)r;
+                bufa.Vivod(richTextBox3);
+                button16.Enabled = true;
+                button17.Enabled = true;
+            }
+            catch
+            {
+                MessageBox.Show("Что-то не так");
+            }
+        }
+
+
     }
     class MyArray
     {
@@ -159,7 +365,7 @@ namespace pract11_2
             for (int i = 0; i < DoubleArray.GetLength(0); ++i, a.Text += "\n")
                 for (int j = 0; j < DoubleArray.GetLength(1); ++j)
                 {
-                    a.Text += $"{Math.Round(DoubleArray[i, j], 1), 4}";
+                    a.Text += $"{Math.Round(DoubleArray[i, j], 1), 5}";
                 }
         }
 
@@ -211,6 +417,141 @@ namespace pract11_2
                     }
                 }
             }
+        }
+
+        public static MyArray operator ++(MyArray a)
+        {
+            for (int i = 0; i < a.DoubleArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.DoubleArray.GetLength(1); j++)
+                {
+                    a.DoubleArray[i, j] = a.DoubleArray[i, j] + 1;
+                }
+            }
+            return a;
+        }
+
+        public static MyArray operator --(MyArray a)
+        {
+            for (int i = 0; i < a.DoubleArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.DoubleArray.GetLength(1); j++)
+                {
+                    a.DoubleArray[i, j] = a.DoubleArray[i, j] - 1;
+                }
+            }
+            return a;
+        }
+
+        public static bool operator true(MyArray a)
+        {
+            for (int i = 0; i < a.DoubleArray.GetLength(0); i++)
+            {
+                for (int j = 1; j < a.DoubleArray.GetLength(1); j++)
+                {
+                    if (a.DoubleArray[i, j] < a.DoubleArray[i, j - 1])
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        public static bool operator false(MyArray a)
+        {
+            for (int i = 0; i < a.DoubleArray.GetLength(0); i++)
+            {
+                for (int j = 1; j < a.DoubleArray.GetLength(1); j++)
+                {
+                    if (a.DoubleArray[i, j] > a.DoubleArray[i, j - 1])
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        public static MyArray operator *(MyArray a, MyArray b)
+        {
+            if (a.m == b.n)
+            {
+                MyArray c = new MyArray(a.n, b.m);
+                double sum = 0;
+                for (int i = 0; i < a.DoubleArray.GetLength(0); i++)
+                {
+                    for (int j = 0; j < b.DoubleArray.GetLength(1); j++)
+                    {
+                        for (int k = 0; k < b.DoubleArray.GetLength(0); k++)
+                        {
+                            sum += a.DoubleArray[i, k] * b.DoubleArray[k, j];
+                        }
+                        c.DoubleArray[i, j] = sum;
+                        sum = 0;
+                    }
+                }
+                return c;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static MyArray operator *(MyArray a, double b)
+        {
+            MyArray c = new MyArray(a.n, a.m);
+            double sum = 0;
+            for (int i = 0; i < a.DoubleArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.DoubleArray.GetLength(1); j++)
+                {
+                    c.DoubleArray[i, j] = a.DoubleArray[i, j] * b;
+                }
+            }
+            return c;
+        }
+
+        //***********************************************************************
+
+        public static explicit operator double[][](MyArray a)
+        {
+            double[][] buf = new double[a.n][];
+            for (int i = 0; i < a.n; i++)
+            {
+                buf[i] = new double[a.m];
+                for (int j = 0; j < a.m; j++)
+                {
+                    buf[i][j] = a.DoubleArray[i, j];
+                }
+            }
+            return buf;
+        }
+
+        public static explicit operator MyArray(double[][] a)
+        {
+            int n = a.GetLength(0);
+            int m = a[0].Length;
+            MyArray b = new MyArray(n, m);
+            for (int chet = 1; chet < a.GetLength(0); chet++)
+            {
+                if (a[chet].Length == a[chet - 1].Length)
+                {
+                    for (int i = 0; i < n; i++)
+                    {
+                        for (int j = 0; j < m; j++)
+                        {
+                            b.DoubleArray[i, j] = a[i][j];
+                        }
+                    }
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            return b;
         }
     }
 }
